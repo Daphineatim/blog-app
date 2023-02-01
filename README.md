@@ -1,15 +1,4 @@
 # Rails Blog
-<a name="readme-top"></a>
-
-
-<div align="center">
-
-
-  <img src="https://user-images.githubusercontent.com/93520178/203661672-538bff13-8797-4d20-9b82-372aa011d464.png" alt="logo" width="80"  height="auto" />
-  <br/>
-
-</div>
-
 
 # 📗 Table of Contents
 
@@ -93,7 +82,9 @@ Things you may want to cover:
 👤 **Daphine Atim**
 
 GitHub: @Daphineatim
+
 Twitter: @dhaphyn
+
 LinkedIn: DaphineAtim
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
