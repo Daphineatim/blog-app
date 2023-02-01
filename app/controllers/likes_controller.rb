@@ -47,21 +47,21 @@ class LikesController < ApplicationController
 
   # DELETE /likes/1 or /likes/1.json
   def destroy
-      @like.destroy
+    @like.destroy
 
-      respond_to do |format|
-        format.html { redirect_to likes_url, notice: 'Like was successfully destroyed.' }
-        format.json { head :no_content }
-      end
+    respond_to do |format|
+      format.html { redirect_to likes_url, notice: 'Like was successfully destroyed.' }
+      format.json { head :no_content }
     end
+  end
 
-    private
+private
 
   # Use callbacks to share common setup or constraints between actions.
   def set_like
     @like = Like.find(params[:id])
   end
- 
+
   # Only allow a list of trusted parameters through.
   def like_params
     params.fetch(:like, {})
