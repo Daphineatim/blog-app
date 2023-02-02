@@ -1,2 +1,2 @@
-class Post < ApplicationRecord
+class User < ApplicationRecord
 end
