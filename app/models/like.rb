@@ -5,6 +5,6 @@ class Like < ApplicationRecord
   def update_like_counter_for_post
     post = Post.find_by(id: post_id)
     count = Like.where(post_id: post.id).count
-    post.increment!(likes_counter)
+    post.increment!(:likes_counter)
   end
 end
