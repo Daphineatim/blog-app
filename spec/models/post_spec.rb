@@ -6,6 +6,10 @@ RSpec.describe Post, type: :model do
     expect(post).to_not be_valid
   end
 
+  describe 'validations' do
+    it { should validate_presence_of(:post) }
+  end
+
   it 'Post with comment counter negative' do
     post = Post.create(author_id: 1, text: 'Hello1')
     post.comments_counter = -1
