@@ -38,7 +38,7 @@ RSpec.describe Post, type: :model do
 
   it 'Update post counter' do
     user = User.create(name: 'John', photo: 'www.google.com', bio: 'Male', posts_counter: 0)
-    posts = Post.create(author_id: user.id, title: 'ello', text: 'Hello1', comments_counter: 0, likes_counter: 0)
+    Post.create(author_id: user.id, title: 'ello', text: 'Hello1', comments_counter: 0, likes_counter: 0)
     user2 = User.first
 
     expect(user2.posts_counter).to eq(1)
