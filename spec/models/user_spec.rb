@@ -7,7 +7,7 @@ RSpec.describe User, type: :model do
   end
 
   it 'Testing user PostCounter number negative' do
-    user = User.create(name: 'John', photo: 'www.google.com', bio: 'Male',  posts_counter: -1)
+    user = User.create(name: 'John', photo: 'www.google.com', bio: 'Male', posts_counter: -1)
     expect(user).to_not be_valid
   end
 
