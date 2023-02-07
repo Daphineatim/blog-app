@@ -1,10 +1,23 @@
-<p style="color: green"><%= notice %></p>
-
-<%= render @post %>
-
-<div>
-  <%= link_to "Edit this post", edit_post_path(@post) %> |
-  <%= link_to "Back to posts", posts_path %>
-
-  <%= button_to "Destroy this post", @post, method: :delete %>
-</div>
+<section class="container">    
+    <div class="post-info">
+        <div class="post-title-box">
+            <p class="post-title">Post : <%= @post.title %> by <%= @post.author.name %></p>
+            <p class="post-text-1">Comments: <span><%= @post.comments_counter || 0 %>, Likes: <%= @post.likes_counter || 0 %></span></p>
+        </div>
+        <p><%= @post.text %></p>
+    </div>
+    <div class="comment-info">
+        <% @post.recent_comments.each do |comment| %>
+            <div>
+                <p> 
+                    <span>
+                        <%= comment.author.name %>:
+                    </span> 
+                    <span>
+                        <%= comment.text %>
+                    </span>
+                </p>
+            </div>            
+        <% end %>
+    </div>   
+</section>
