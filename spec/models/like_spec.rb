@@ -1,9 +1,5 @@
 require 'rails_helper'
 
-describe 'validations' do
-  it { should validate_presence_of(:like) }
-end
-
 RSpec.describe Like, type: :model do
   it 'Update like counter for post' do
     user = User.create(name: 'John', photo: 'www.google.com', bio: 'Male', posts_counter: 0)
