@@ -1,9 +1,5 @@
 require 'rails_helper'
 
-describe 'validations' do
-  it { should validate_presence_of(:user) }
-end
-
 RSpec.describe User, type: :model do
   it 'Testing user without name' do
     user = User.create

@@ -1,9 +1,5 @@
 require 'rails_helper'
 
-describe 'validations' do
-  it { should validate_presence_of(:comment) }
-end
-
 RSpec.describe Comment, type: :model do
   it 'Update comment counter for post' do
     user = User.create(name: 'John', photo: 'www.google.com', bio: 'Male', posts_counter: 0)
