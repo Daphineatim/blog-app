@@ -3,7 +3,7 @@
         <img class="image-user" src=<%= @user.photo %> alt="user"/>
         <div class="user-info">
             <p class="user-name"><%= @user.name %></p>
-            <p class="user-post">Number of posts: <%= @user.posts_counter%></p> 
+            <p class="user-post">Number of posts: <%= @user.PostsCounter%></p> 
         </div>   
     </div>   
     <p class="user-bio"><%= @user.bio %></p>
@@ -13,15 +13,15 @@
         <div class="user-recent-post">
             <p class="post-title"><strong>Post</strong> : <%= post.title %></p>
             <p class="post-text"><%= post.text %></p>
-            <h3 class="counters">Comments: <%= post.comments_counter %>
-                Likes: <%= post.likes_counter %><h3>             
+            <h3 class="counters">Comments: <%= post.CommentSCounter %>
+                Likes: <%= post.LikesCounter %><h3>             
         </div>
         <% end %>       
     <% end %>    
 
     <div class="button-user">
         <button class="button">
-        <%= link_to "See all posts", user_posts_path(@user), class:"text-button" %>
+        <%= link_to "View all posts", user_posts_path(@user), class:"text-button" %>
         </button>
     </div>
 </section>
