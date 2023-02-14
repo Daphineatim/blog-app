@@ -3,7 +3,7 @@ class PostsController < ApplicationController
 
   def index
     @user = current_user
-    @posts = @user.posts.include(:comments)
+    @posts = @user.posts
   end
 
   def show
