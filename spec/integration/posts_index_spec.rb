@@ -20,7 +20,7 @@ RSpec.describe 'posts#index', type: :system do
 
     it "shows user's profile picture" do
       visit(user_posts_path(@user1.id))
-      expect(page.body).to have_css("img.image-user")
+      expect(page.body).to have_css('img.image-user')
     end
 
     it 'shows the users username' do
@@ -66,6 +66,5 @@ RSpec.describe 'posts#index', type: :system do
       post = Post.first
       expect(page).to have_content(post.likes_counter)
     end
-
   end
 end
