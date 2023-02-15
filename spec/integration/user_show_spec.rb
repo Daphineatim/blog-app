@@ -13,7 +13,7 @@ RSpec.describe 'Test Show user Page', type: :system do
                                 comments_counter: 0, likes_counter: 0, id: 3)
       @fourth_post = Post.create(author: @user, title: 'My last post',
                                  text: 'last post text', comments_counter: 0, likes_counter: 0, id: 4)
-
+    
       visit(user_path(@user))
     end
 
