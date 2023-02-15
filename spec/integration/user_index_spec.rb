@@ -12,21 +12,21 @@ RSpec.describe 'Test Index Page', type: :system do
     end
 
     it 'shows the users username' do
-      visit root_path
+      visit user_path
       expect(page).to have_content('Mohammed')
       expect(page).to have_content('Ahmed')
       expect(page).to have_content('Marwan')
     end
 
     it 'shows the users profile picture' do
-      visit root_path
+      visit user_path
       expect(page).to have_css('img[src*="image1.png"]')
       expect(page).to have_css('img[src*="image2.png"]')
       expect(page).to have_css('img[src*="image3.png"]')
     end
 
     it 'shows the number of posts of each user' do
-      visit root_path
+      visit user_path
       expect(page).to have_content('1')
       expect(page).to have_content('3')
       expect(page).to have_content('5')
