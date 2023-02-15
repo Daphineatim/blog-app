@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'Test Show user Page', type: :feature do
+RSpec.describe 'Test Show user Page', type: :system do
   describe 'GET Show' do
     before(:each) do
       @user = User.create(name: 'Mohammed', photo: 'image1.png', bio: 'bio1', posts_counter: 0)

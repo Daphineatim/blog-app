@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'Post show', type: :feature do
+RSpec.describe 'Post show', type: :system do
   describe 'Post' do
     before(:each) do
       # @user1 = User.create(name: 'Margaret', photo: 'margaret.png', bio: 'bio', posts_counter: 0)
@@ -10,8 +10,6 @@ RSpec.describe 'Post show', type: :feature do
       @first_user.save!
       @second_user = User.create(name: 'Lilly', photo: 'margaret.jpeg', bio: 'Teacher from Poland.', posts_counter: 0)
       @second_user.save!
-
-      visit root_path
 
       @first_post = Post.create(author: @first_user, title: 'Hello', text: 'This is my first post',
                                 comments_counter: 0, likes_counter: 0)
