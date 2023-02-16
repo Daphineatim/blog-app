@@ -73,6 +73,9 @@ GEM
     bootsnap (1.16.0)
       msgpack (~> 1.2)
     builder (3.2.4)
+    bullet (7.0.7)
+      activesupport (>= 3.0.0)
+      uniform_notifier (~> 1.11)
     capybara (3.38.0)
       addressable
       matrix
@@ -238,6 +241,7 @@ GEM
     tzinfo-data (1.2022.7)
       tzinfo (>= 1.0.0)
     unicode-display_width (2.4.2)
+    uniform_notifier (1.16.0)
     web-console (4.2.0)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
@@ -256,10 +260,12 @@ GEM
     zeitwerk (2.6.6)
 
 PLATFORMS
+  arm64-darwin-21
   x64-mingw-ucrt
 
 DEPENDENCIES
   bootsnap
+  bullet
   capybara
   debug
   importmap-rails
@@ -271,7 +277,6 @@ DEPENDENCIES
   rspec-describe-method
   rspec-rails
   rubocop (>= 1.0, < 2.0)
-  selenium-webdriver
   sprockets-rails
   stimulus-rails
   turbo-rails
